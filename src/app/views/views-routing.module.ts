@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
-import { ViewsModuleHomeComponent } from './views-module-home/views-module-home.component';
+import { Routes, RouterModule } from '@angular/router';
+import { ViewsHomeComponent } from './views-home/views-home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ViewsModuleHomeComponent,
-  },
+    component: ViewsHomeComponent
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class ViewsRoutingModule {}
